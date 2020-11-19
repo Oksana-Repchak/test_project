@@ -20,8 +20,8 @@ export default class ApiService {
     
     try {
       const response = await fetch(url);
-      const results = await response.json();
-      return results;
+      const data = await response.json();
+      return data.results;
     } catch (err) {
       return console.log('Some error in fetch');
     }
