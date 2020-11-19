@@ -4,16 +4,17 @@ import moviesList from '../templates/movies-list.hbs';
 
 const searchForm = document.querySelector('#searchForm');
 const moviesContainer = document.querySelector('.js-movies-container');
-
+// console.log(searchForm)
 const apiService = new ApiService();
 
-searchForm.addEventListener('submit', onSearch)
+searchForm.addEventListener('submit', onSearch);
 
 function onSearch(e) {
     e.preventDefault();
 
+
   apiService.query = e.currentTarget.elements.query.value;
-        
+  // console.log(e.currentTarget.elements.query.value);
   apiService.resetPage();
   clearListMovies();
   viewMarkup();
@@ -37,4 +38,5 @@ try {
     console.log('Error');
   }
 }
+
 apiService.fetchMoviesSearch();
