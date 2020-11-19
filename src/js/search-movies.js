@@ -37,3 +37,4 @@ try {
     console.log('Error');
   }
 }
+apiService.fetchMoviesSearch();

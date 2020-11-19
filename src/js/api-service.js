@@ -22,7 +22,7 @@ export default class apiService {
       const response = await fetch(url);
       const results = await response.json();
       this.incrementPage();
-
+// console.log(results);
       return results;
     } catch (err) {
       return console.log('Some error in fetch');
