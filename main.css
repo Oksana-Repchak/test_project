@@ -1,0 +1,75 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.background-accent {
+  background-color: #f5f4fa;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.link-decoration {
+  display: block;
+  margin-top: 0;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #f7f7f7;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-heart {
+  display: inline-flex;
+  width: 14px;
+  height: 13px;
+  background-image: url("./images/heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer-copyright {
+  margin-top: 30px;
+  margin-bottom: 28px;
+}
