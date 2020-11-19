@@ -7,39 +7,23 @@
     <title>Webpack Starter Kit</title>
 
     <!-- Don't forget to delete this style tag. -->
-    <style>
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .intro {
-        text-align: center;
-      }
-
-      .intro h1 {
-        margin-top: 0;
-        font-weight: 500;
-        font-size: 40px;
-      }
-
-      .intro img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-    </style>
   </head>
 
   <body>
-    <article class="intro">
-      <h1>Webpack starter kit</h1>
+<main>
 
-      <!-- HTML image reference example. -->
-      <img src="./images/intro.png" alt="" width="640" />
-    </article>
-  </body>
+  <form class="form-search">
+    <label><input type="search" name="search" placeholder="Поиск фильмов" class="input-search" id="searchForm"></label>
+    <!-- <span><svg class="">
+              <use href="./images/sprite.svg#icon-search"></use>
+            </svg></span> -->
+  </form>
+  <section class="section">
+    <div class="container">
+      <div id="spinner"></div>
+      <ul class="movies-list js-movies-container"></ul>
+    </div>
+  </section>
+
+</main>  </body>
 </html>

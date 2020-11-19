@@ -1,0 +1,14 @@
+<article>
+    <img class="card-image" src="{{poster_path}}" alt="{{original_title}} movie poster" width="274">
+    <h2 class="card-title">{{original_title}}</h2>
+    <ul class="card-list">
+        <li><span>Vote / Votes</span><span class="vote">{{vote_average}}</span class="votes"> /
+            <span>{{vote_count}}</span></li>
+        <li><span>Popularity</span>{{popularity}}</li>
+        <li><span>Original Title</span>{{original_title}}</li>
+        {{#each genres}}
+        <li><span>Genre</span>{{genre_ids}}</li>
+        {{/each}}
+    </ul>
+    <p class="card-text"><span>About</span>{{overview}}</p>
+</article>
