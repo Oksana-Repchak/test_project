@@ -1,18 +1,20 @@
-import ApiService from './api-service';
+import NewsApiService from './api-service';
 import moviesList from '../templates/movies-list.hbs';
 
 
 const searchForm = document.querySelector('#searchForm');
 const moviesContainer = document.querySelector('.js-movies-container');
 
-const apiService = new ApiService();
+const newApiService = new NewsApiService();
 
 searchForm.addEventListener('input', onSearch);
 
 function onSearch(e) {
-    apiService.query = e.target.value;
-    if (apiService.query !== '') {
-        apiService.fetchMoviesSearch()
+    e.preventDefault();
+
+  newApiService.query = e.target.value;
+    if (newApiService.query !== '') {
+        newApiService.insertSearchGenresOfMovie()
             .then(renderMoviesCard);
     } else {
         clearMarkup();
